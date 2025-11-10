@@ -36,3 +36,33 @@ This setup forms a clean base for applied AI research, API development, or secur
 1. Activate your virtual environment:
    ```bash
    source venv/bin/activate
+---
+### 🧩 External Libraries & APIs Used
+This project relies on several open-source libraries and APIs to support backend logic, AI integrations, and Jac agent orchestration.
+
+| Library / API | Purpose |
+|----------------|----------|
+| **FastAPI** | High-performance backend framework for serving API endpoints |
+| **Uvicorn** | ASGI server used to run FastAPI applications |
+| **Google Generative AI (Gemini)** | Provides AI-powered model inference for text and code generation |
+| **Jaseci (Jac Framework)** | Enables creation and orchestration of intelligent Jac agents |
+| **Requests** | Simplified HTTP requests for API integrations |
+| **dotenv** | Loads environment variables securely from `.env` files |
+| **Git & GitHub** | Version control and collaboration tools |
+
+---MIT License
+Copyright (c) 2025 Roy Ngui
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+...
+
+### 🔒 Environment Variables
+To run this project locally, create a `.env` file in your root directory and include:
+```bash
+GOOGLE_API_KEY=your_google_generativeai_api_key
+OPENAI_API_KEY=your_openai_api_key
