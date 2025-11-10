@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+jacklangRM/
+*.pyc
+*.log
+.DS_Store
