@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Repo Summarizer</title>
+</head>
+<body>
+    <h1>GitHub Repo Summarizer</h1>
+    <input type="text" id="repoUrl" placeholder="Enter GitHub repo URL" size="50">
+    <button onclick="summarizeRepo()">Summarize</button>
+
+    <h2>Summary:</h2>
+    <pre id="summary"></pre>
+
+    <script>
+        async function summarizeRepo() {
+            const url = document.getElementById("repoUrl").value;
+            const response = await fetch("http://127.0.0.1:8000/summarize", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ repo_url: url })
+            });
+            const data = await response.json();
+            document.getElementById("summary").textContent = data.summary || data.error;
+        }
+    </script>
+</body>
+</html>
+
