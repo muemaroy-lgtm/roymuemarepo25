@@ -4,3 +4,10 @@ jacklangRM/
 *.pyc
 *.log
 .DS_Store
+venv/
+__pycache__/
+jacklangRM/
+*.pyc
+*.log
+.DS_Store
+roymuemarepo25/
